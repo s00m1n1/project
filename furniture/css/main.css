@@ -348,7 +348,7 @@
 }
 @media screen and (max-width:900px) {
     .item .itembox {
-        padding: 45px 0 0;
+        padding: 45px 0;
     }
     .item .itembox h2 {
         font-size: 20px;
@@ -357,8 +357,17 @@
         margin: 15px 0 40px 0;
         font-size: 16px;
     }
-    .item .itembox .banner ul li {
-        width: 80%;
+    .item .itembox .banner ul li strong {
+        display: block;
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    .item .itembox .more {
+        margin: 50px 0 0 0;
+    }
+    .item .itembox .more a span {
+        font-size: 15px;
     }
 }
 /* item 종료 */
