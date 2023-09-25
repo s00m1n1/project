@@ -3,7 +3,7 @@
   <h1><a href="https://s00m1n1.github.io/project/index.html" target="_blank">홈페이지 바로가기</a></h1>
 
   
-  <h2><a href="https://s00m1n1.github.io/project/furniture/index.html" target="_blank">가구홈페이지 바로가기</a></h2>
+  <h5><a href="https://s00m1n1.github.io/project/furniture/index.html" target="_blank">가구홈페이지 바로가기</a></h5>
 </div>
 
 
