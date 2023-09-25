@@ -1,2 +1,3 @@
-
-[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=s00m1n1)](https://solved.ac/s00m1n1)<br/>
+https://capsule-render.vercel.app/api?
+![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90)
+<img src="https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90" />
