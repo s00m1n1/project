@@ -26,11 +26,11 @@ $(document).ready(function(){
       slidesPerView: 1, 
       spaceBetween: 16, 
       breakpoints: {
-          640: {    
+          400: {    
               slidesPerView: 2,
               spaceBetween: 16,
           },
-          800: {    
+          640: {    
               slidesPerView: 3,
               spaceBetween: 20,
           },
