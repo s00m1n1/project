@@ -26,11 +26,11 @@ $(document).ready(function(){
       slidesPerView: 1, 
       spaceBetween: 16, 
       breakpoints: {
-          400: {    
+          640: {    
               slidesPerView: 2,
               spaceBetween: 16,
           },
-          640: {    
+          860: {    
               slidesPerView: 3,
               spaceBetween: 20,
           },
@@ -42,6 +42,11 @@ $(document).ready(function(){
             slidesPerView: 4,
             spaceBetween: 30,
         },
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.ctrl_next',
+        prevEl: '.ctrl_prev',
       },
     });
 

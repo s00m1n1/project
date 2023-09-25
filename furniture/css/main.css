@@ -304,6 +304,9 @@
     font-size: 20px;
     font-weight: 300;
 }
+.item .itembox .ctrlbox {
+    display: none;
+}
 .item .itembox .more {
     display: flex;
     justify-content: center;
@@ -357,6 +360,9 @@
         margin: 15px 0 40px 0;
         font-size: 16px;
     }
+    .item .itembox .banner {
+        margin: 0 50px;
+    }
     .item .itembox .banner ul li strong {
         display: block;
         margin: 20px 0 0 0;
@@ -368,6 +374,44 @@
     }
     .item .itembox .more a span {
         font-size: 15px;
+    }
+    @media screen and (max-width:640px) {  
+        .item .itembox .banner {
+            margin: 0 25vw;
+        }
+        .item .itembox .ctrlbox {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            z-index: 10;
+            font-size: 0;
+            line-height: 0;
+        }
+        
+        .item .itembox .ctrlbox .ctrl_prev::before,
+        .item .itembox .ctrlbox .ctrl_next::before {
+            position: relative;
+            display: block;
+            left: 0;
+            top: 0;
+            opacity: 0.7;
+            width: 10px;
+            height: 31px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: "";
+        }
+        .item .itembox .ctrlbox .ctrl_prev::before {
+            background-image: url(../images/popup_arrow_left.svg);
+        }
+        .item .itembox .ctrlbox .ctrl_next::before {
+            background-image: url(../images/popup_arrow_right.svg);
+            left: 120px;
+        }
     }
 }
 /* item 종료 */
