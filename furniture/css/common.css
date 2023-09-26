@@ -379,3 +379,43 @@ html, body {
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 } 
+
+.footer {
+    padding: 50px 0 0 0;
+    color: #fff;
+    background-color: #dfd2bf;
+}
+.footer .flogo {
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    padding: 0 0 30px 0;
+}
+.footer .flogo a img {
+    display: block;
+    width: 166px;
+    height: 20px;
+}
+.footer .sns_ico {
+    float: right;
+    margin: -60px 0 0 0;
+}
+.footer .sns_ico ul li {
+    float: left;
+    margin-left: 15px;
+}
+.footer .fbody {
+    margin: 46px 0 20px 0;
+}
+.footer .fbody span {
+    margin-right: 35px;
+}
+.footer .inner span {
+    margin-right: 35px;
+}
+.footer .copy {
+    display: inline-block;
+    margin: 40px 20px 55px 0;
+    color: #ededed;
+}
+.footer .kweb {
+    display: inline-block;
+}
