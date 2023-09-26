@@ -45,8 +45,21 @@ $(document).ready(function(){
       },
       // Navigation arrows
       navigation: {
-        nextEl: '.ctrl_next',
-        prevEl: '.ctrl_prev',
+        nextEl: '.ctrlNext',
+        prevEl: '.ctrlPrev',
+      },
+    });
+    const swiper_mid = new Swiper('.mid', { 
+      slidesPerView: 1, 
+      spaceBetween: 16, 
+      // Navigation arrows
+      navigation: {
+        nextEl: '.ctrlnext',
+        prevEl: '.ctrlprev',
+      },
+      pagination: {  /* 몇개의 팝업이 있는지 보여주는 동그라미 */
+          el: '.btn_paging', /* 해당 요소의 class명 */
+          clickable: true,  /* 클릭하면 해당 팝업으로 이동할 것인지 값 */
       },
     });
 
