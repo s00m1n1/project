@@ -556,18 +556,22 @@
     position: absolute;
     left: 50%;
     width: 100%;
-    bottom: 10px;
+    bottom: -10px;
     transform: translate(-50%,0);
     z-index: 10;
     font-size: 0;
     line-height: 0;
     justify-content: space-between;
 }
+.noti .notcnt .gallbox .ctrlbox button {
+    width: 100%;
+    height: 30px;
+}
 .noti .notcnt .gallbox .ctrlbox .ctrlprev::before,
 .noti .notcnt .gallbox .ctrlbox .ctrlnext::before {
     position: absolute;
     left: 0;
-    top: 0px;
+    bottom: 15px;
     width: 180px;
     height: 1px;
     background-color: rgba(0,0,0,0.7);
@@ -580,7 +584,7 @@
 .noti .notcnt .gallbox .ctrlbox .ctrlprev::after,
 .noti .notcnt .gallbox .ctrlbox .ctrlnext::after {
     position: absolute;
-    bottom: -3px;
+    bottom: 13px;
     width: 15px;
     height: 15px;
     font-family: 'Material Symbols Rounded';
@@ -610,7 +614,7 @@
     align-items: center;
     position: absolute;
     left: 50%;
-    bottom: -4px;
+    bottom: 11px;
     z-index: 10;
     transform: translate(-50%,0);
 }
@@ -676,7 +680,14 @@
         object-fit: cover;
     }
     .noti .notcnt .gallbox .ctrlbox {
-        bottom: -10px;
+        bottom: -50px;
+    }
+    .noti .notcnt .gallbox .ctrlbox button {
+        height: 50px;
+    }
+    .noti .notcnt .gallbox .ctrlbox .ctrlprev::before,
+    .noti .notcnt .gallbox .ctrlbox .ctrlnext::before {
+        bottom: 25px;
     }
     .noti .notcnt .gallbox .ctrlbox .ctrlnext::before {
         left: auto;
@@ -685,7 +696,7 @@
     .noti .notcnt .gallbox .ctrlbox .ctrlprev::after,
     .noti .notcnt .gallbox .ctrlbox .ctrlnext::after {
         font-size: 19px;
-        bottom: -6px;
+        bottom: 20px;
     }
     .noti .notcnt .gallbox .ctrlbox .ctrlprev::after {
         left: -7px;
@@ -694,22 +705,15 @@
         right: -4px;
     }
     .noti .notcnt .gallbox .ctrlbox .ctrl_group {
-        bottom: -6px;
-    }
-    .noti .notcnt .gallbox .ctrlbox .ctrl_group .btn_paging span.swiper-pagination-bullet {
-        width: 7px;
-        height: 7px;
-    }
-    @media screen and (max-width:640px) {
-        .noti .notcnt .gallbox .ctrlbox .ctrl_group .btn_paging span.swiper-pagination-bullet {
-            width: 5px;
-            height: 5px;
-        }
-        .noti .notcnt .gallbox .mid ul li a img {
-            height: 130vw;
-        }
+        bottom: 20px;
     }
 }
+@media screen and (max-width:640px) {
+    .noti .notcnt .gallbox .mid ul li a img {
+        height: 130vw;
+    }
+}
+
 /* noti 종료 */
 
 /* cont 시작 */

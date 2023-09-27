@@ -367,10 +367,6 @@ html, body {
     .header.mobile_open .gnb .gnb_wrap {
         display: block;
     }
-    
-    .header .gnb .gnb_wrap>ul>li.sub_open>ul { 
-        /* display: block; */
-    }
     .header.fixed { 
         position: fixed;
         backdrop-filter: blur(10px);
