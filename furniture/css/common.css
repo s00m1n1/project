@@ -406,10 +406,36 @@ html, body {
     margin: 46px 0 20px 0;
 }
 .footer .fbody span {
+    position: relative;
     margin-right: 35px;
 }
+.footer .fbody span::after {
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    width: 1px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.7);
+    content: "";
+}
+.footer .fbody a:last-of-type span::after {
+    display: none;
+}
 .footer .inner span {
+    position: relative;
     margin-right: 35px;
+}
+.footer .inner span::after {
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    width: 1px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.7);
+    content: "";
+}
+.footer .inner span:last-of-type::after {
+    display: none;
 }
 .footer .copy {
     display: inline-block;
@@ -418,4 +444,80 @@ html, body {
 }
 .footer .kweb {
     display: inline-block;
+}
+@media screen and (max-width:1045px) {
+    .footer .inner {
+        width: 570px;
+    }
+    .footer .inner span:nth-of-type(3)::after {
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    .footer .fbody span::after {
+        right: -19px;
+        top: 6px;
+    }
+    .footer .inner {
+        width: 510px;
+    }
+    .footer .inner span::after {
+        right: -19px;
+        top: 6px;
+    }
+}
+@media screen and (max-width:900px) {
+    .footer .copy {
+        display: block;
+        margin: 20px 0 5px 0;
+    }
+    .footer .kweb {
+        display: block;
+        padding: 0 0 50px 0;
+    }
+}
+@media screen and (max-width:640px) {
+    .footer .inner {
+        width: 480px;
+    }
+    .footer .sns_ico {
+        margin: -52px 0 0 0;
+    }
+    .footer .sns_ico ul li a img {
+        display: block;
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:480px) {
+    .footer {
+        padding: 100px 0 0 0;
+    }
+    .footer .fbody {
+        margin: 25px 0 20px 0;
+        width: 320px;
+    }
+    .footer .fbody a:nth-of-type(2) span::after {
+        display: none;
+    }
+    .footer .inner {
+        width: 320px;
+    }
+    .footer .inner span:nth-of-type(3)::after {
+        display: block;
+    }
+    .footer .inner span:nth-of-type(2)::after {
+        display: none;
+    }
+    .footer .inner span:nth-of-type(4)::after {
+        display: none;
+    }
+    .footer .sns_ico {
+        float: none;
+        margin: -100px 0 110px 0;
+    }
+    .footer .sns_ico ul li:first-child {
+        margin-left: 0;
+    }
 }
