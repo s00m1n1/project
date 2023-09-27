@@ -263,7 +263,11 @@
         width: 60%;
     }
 }
-
+@media screen and (max-width:640px)  {
+    .infor .inforbox .txt .more a {
+        font-size: 14px;
+    }
+}
 /* infor 종료 */
 
 /* item 시작 */
@@ -411,6 +415,9 @@
         }
         .item .itembox .ctrlbox .ctrlNext::before {
             background-image: url(../images/popup_arrow_right.svg);
+        }
+        .item .itembox .more a span {
+            font-size: 14px;
         }
     }
 }
