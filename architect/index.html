@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>건축회사</title>
+		<link rel="stylesheet" href="//cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.min.css">
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/minibarjs@latest/dist/minibar.min.css">
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/rangeable@latest/dist/rangeable.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<header class="header">
+				<div class="wrapper gnb">
+					<h1 class="logo"><a href="index.html">로고이미지</a></h1>
+					<div class="anchors nav">
+						<ul>
+							<li><a href="#page-1" class="active">메인</a></li>
+							<li><a href="#page-2">인사말</a></li>
+							<li><a href="#page-3">영업안내</a></li>
+							<li><a href="#page-4">온라인상담</a></li>
+							<li><a href="#page-5">공지사항</a></li>
+							<li><a href="#page-6">포토갤러리</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			
+			<main>
+				<section data-anchor="Page 1">
+					<div class="visual swiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide"><img src="images/main/visual1.png" alt="메인이미지1"></li>
+							<li class="swiper-slide"><img src="images/main/visual2.png" alt="메인이미지2"></li>
+							<li class="swiper-slide"><img src="images/main/visual3.png" alt="메인이미지3"></li>
+						</ul>							
+						<div class="popup">
+							<div class="wrapper">
+								<div class="popupbox">
+									<h2></h2>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-anchor="Page 2">
+					<div class="text">
+
+					</div>
+				</section>
+				<section data-anchor="Page 3">
+					<div class="text">
+
+					</div>
+				</section>
+				<section data-anchor="Page 4">
+					<div class="text">
+
+					</div>
+				</section>
+				<section data-anchor="Page 5">
+					<div class="text">
+
+					</div>
+				</section>
+				<section data-anchor="Page 6">
+					<div class="text">
+
+					</div>
+				</section>
+			</main>
+			
+			<div id="settings" class="active">
+				<div class="settings-inner">
+					<a href="#" id="settings-open"><span class="mdi"></span></a>
+					<div id="scroll">
+						<h4>Events</h4>
+						<div class="setting">
+							<ul id="listeners"></ul>
+						</div>
+						<h4>Config</h4>
+						<div class="setting">
+							<label for="animation">animation <span class="output"></span></label>
+							<input type="range" id="animation">
+						</div>
+			
+						<div class="setting">
+							<label for="delay">delay <span class="output"></span></label>
+							<input type="range" id="delay">
+						</div>
+			
+						<div class="setting">
+							<label for="swipeThreshold">swipeThreshold <span class="output"></span></label>
+							<input type="range" id="swipeThreshold">
+						</div>
+			
+						<div class="setting">
+							<div class="checkbox">
+								<input type="checkbox" id="freescroll" data-event="freescroll" name="checkbox" checked>
+								<label for="freescroll">freeScroll</label>
+							</div>
+						</div>
+						
+						<div class="setting">
+							<div class="checkbox">
+								<input type="checkbox" id="infinite" data-event="infinite" name="checkbox">
+								<label for="infinite">infinite</label>
+							</div>
+						</div>				
+						
+						<h4>Controls</h4>
+						<div class="setting">
+							<div class="checkbox">
+								<input type="checkbox" id="wheel" data-event="wheel" name="checkbox" checked>
+								<label for="wheel">mousewheel</label>
+							</div>
+						</div>
+						<div class="setting">
+							<div class="checkbox">
+								<input type="checkbox" id="mouse" data-event="mouse" name="checkbox" checked>
+								<label for="mouse">drag</label>
+							</div>
+						</div>
+						<div class="setting">
+							<div class="checkbox">
+								<input type="checkbox" id="touch" data-event="touch" name="checkbox" checked>
+								<label for="touch">swipe</label>
+							</div>
+						</div>
+						<div class="setting">
+							<div class="checkbox">
+								<input type="checkbox" id="keydown" data-event="keydown" name="checkbox" checked>
+								<label for="keydown">keyboard</label>
+							</div>
+						</div>								
+			
+						<h4>Methods</h4>
+						<div class="setting">
+							<button type="button" data-method="prev">prev()</button>
+							<button type="button" data-method="next">next()</button>
+						</div>
+						<div class="setting">
+							<label for="scrollToPage">scrollToPage()</label>
+							<select id="scrollToPage"></select>
+						</div>
+						<div class="setting">
+							<label for="scrollToAnchor">scrollToAnchor()</label>
+							<select id="scrollToAnchor"></select>
+						</div>
+						<div class="setting">
+							<label for="orientate">orientate()</label>
+							<select id="orientate"></select>
+						</div>		
+					</div>
+				</div>
+			</div>
+			
+
+			<script src="js/jquery-3.6.0.min.js"></script>
+        	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+			<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/easings.js"></script>
+			<script type="text/javascript" src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+			<script type="text/javascript" src="https://unpkg.com/minibarjs@latest/dist/minibar.min.js"></script>
+			<script type="text/javascript" src="https://unpkg.com/rangeable@latest/dist/rangeable.min.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+			<script type="text/javascript" src="js/common.js"></script>
+		</div>
+	</body>
+</html>
